@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="contain">
+  <div style="background-color:#51A351; color:#DFDFDF;border-radius:5px;">
+  <ul class="nav nav-tabs">
+    
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Service", welcome_service_path %></li>
+      <li><%= link_to "Products", welcome_products_path %></li>
+      <li><%= link_to "About", welcome_about_path %></li>
+      <li><%= link_to "Contact", welcome_contact_path %></li>
+      <li><%= link_to "Location", welcome_location_path %></li>
+  </ul>
+  </div>
+<%= yield %>
+</div>
+</body>
+</html>

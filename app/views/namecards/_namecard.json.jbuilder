@@ -1,0 +1,2 @@
+json.extract! namecard, :id, :date, :birthday, :name, :company, :position, :country, :address, :phone, :email, :postcard, :cardnumber, :created_at, :updated_at
+json.url namecard_url(namecard, format: :json)

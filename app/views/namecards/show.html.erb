@@ -1,0 +1,62 @@
+<div class="container">
+  <h2>Welcome to show data by Thavath</h2>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @namecard.date %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @namecard.birthday %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @namecard.name %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @namecard.company %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @namecard.position %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @namecard.country %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @namecard.address %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @namecard.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @namecard.email %>
+</p>
+
+<p>
+  <strong>Postcard:</strong>
+  <%= @namecard.postcard %>
+</p>
+
+<p>
+  <strong>Cardnumber:</strong>
+  <%= @namecard.cardnumber %>
+</p>
+
+<%= link_to 'Edit', edit_namecard_path(@namecard), class:'btn btn-success' %> |
+<%= link_to 'Back', namecards_path ,class:'btn btn-success' %>
+</div>
